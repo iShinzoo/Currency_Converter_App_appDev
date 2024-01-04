@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Currency Converter "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"/>
+
+    <EditText
+        android:id="@+id/edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Enter Amount to Convert....."
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="100dp"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnRupees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rupees"
+        app:layout_constraintTop_toBottomOf="@+id/edt"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btnDollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dollar"
+        app:layout_constraintTop_toBottomOf="@+id/edt"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="140dp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnRupees"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="12dp"
+        android:textSize="24sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
